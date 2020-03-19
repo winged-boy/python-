@@ -1,0 +1,11 @@
+f='001'
+f
+def foo(a,b):
+return a+b
+f=foo #函数名也是一个引用，这个将f也指向了函数
+dir(f)
+f(2,3)
+def f2(a,b):return a-b
+a,b=3,7
+(foo if a>b else f2)(a,b) #实际上函数名也是对函数的引用。可以对其进行赋值#函数对象作为变量
+out:-4
